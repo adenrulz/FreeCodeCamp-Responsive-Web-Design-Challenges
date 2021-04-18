@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+}
+
+#navbar {
+    background-color: #c12828;
+    position: fixed;
+    width: 100%;
+    top:0;
+    height: 50px;
+    left: 0;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end ;
+}
+#navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0px 10px
+}
+#welcome-section {
+    background-color: #504545;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+#welcome-section h1{
+    font-size: 2rem;
+    margin:0;
+}
+#welcome-section p{
+    color:#00ffff;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+#projects {
+    background-color: #5959b0;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1280px;
+    width: 100%;
+    grid-gap: 3rem;
+}
+.project-image {
+    width: 100%;
+    height: calc(100% - 7rem);
+}
+.project {
+    color: white;
+    background-color: #17172c;
+    text-decoration: none;
+
+}
+.project-title{
+    padding: 20px 0 0 0;
+}
+.code{
+    color:transparent
+}
+.project-title:hover > .code{
+    color: red;
+}
+.btn-show-all {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+#contact{
+        background-color: #504545;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 15px solid #c12828;
+}
+.contact-details {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 10px;
+    font-size: 1.3rem;
+}
+footer{
+     background-color: #504545;
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+
+}
+footer a{
+    color:#fff;
+    text-decoration: none;
+}
+@media (max-width: 768px){
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+    }
+}
